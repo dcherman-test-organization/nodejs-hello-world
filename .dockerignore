@@ -1,0 +1,6 @@
+node_modules
+charts
+manifests
+.gitignore
+.dockerignore
+.sonarlint
