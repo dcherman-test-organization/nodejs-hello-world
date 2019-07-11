@@ -18,6 +18,10 @@ app.get('/', (request, response) => {
  `);
 });
 
+app.get('/error', (request, response) => {
+  response.status(500).send('Uh oh');
+});
+
 const lightship = createLightship({
   port: lightshipPort,
 });
