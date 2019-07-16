@@ -83,6 +83,9 @@ spec:
 
       - name: hello-world
         image: exiges/nodejs-hello-world:1.0.1
+        resources:
+          requests:
+            cpu: 250m
         readinessProbe:
           httpGet:
             path: /ready
