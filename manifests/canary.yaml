@@ -13,10 +13,10 @@ spec:
   # to make progress before it is rollback (default 600s)
   progressDeadlineSeconds: 60
   # HPA reference (optional)
-  #autoscalerRef:
-  #  apiVersion: autoscaling/v2beta1
-  #  kind: HorizontalPodAutoscaler
-  #  name: hello-world
+  autoscalerRef:
+    apiVersion: autoscaling/v2beta1
+    kind: HorizontalPodAutoscaler
+    name: hello-world
   service:
     # container port
     port: 4180
