@@ -53,6 +53,9 @@ spec:
       containers:
       - name: oauth2-proxy
         image: quay.io/pusher/oauth2_proxy:v3.2.0
+        resources:
+          requests:
+            cpu: 100m
 
         args:
          - --http-address=0.0.0.0:4180
