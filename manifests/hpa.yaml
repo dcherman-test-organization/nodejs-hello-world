@@ -13,6 +13,6 @@ spec:
   - type: Resource
     resource:
       name: cpu
-      # scale up if usage is above
-      # 99% of the requested CPU (100m)
-      targetAverageUtilization: 50
+      target:
+        type: Utilization
+        averageUtilization: 50
