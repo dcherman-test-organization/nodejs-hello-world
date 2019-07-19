@@ -85,7 +85,7 @@ spec:
               key: cookie-secret
 
       - name: hello-world
-        image: exiges/nodejs-hello-world:1.0.1
+        image: exiges/nodejs-hello-world:1.0.0
         resources:
           requests:
             cpu: 250m
